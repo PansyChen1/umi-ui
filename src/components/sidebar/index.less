@@ -1,4 +1,44 @@
 .sidebar {
-  width: 20%;
-  height: 100%;
+  width: 260px;
+  background-color: #484f77;
+  .menu {
+    background: #474D78;
+    position: fixed;
+    //bottom: 10px;
+    width: 250px;
+    overflow: hidden;
+  }
+  .ant-menu-dark {
+    background-color: #484f77;
+  }
+  .ant-menu-dark .ant-menu-inline.ant-menu-sub {
+    background-color: #484f77;
+    box-shadow: none;
+  }
 }
+
+.arrow-fixed {
+  position: fixed;
+  bottom: 60px;
+  z-index: 1000;
+  cursor: pointer;
+  img {
+    width: 26px;
+  }
+}
+.hide-left {
+  left: 230px;
+}
+.show-left {
+  left: 6px;
+}
+.leftSideShow .show-left{display:none;}
+.leftSideHide .hide-left{display:none;}
+.leftSideHide {
+  .sidebar{width:40px;overflow-y:scroll;}
+  .right{margin-left:40px;}
+  .sidebar{display:none;}
+}
+
+
+

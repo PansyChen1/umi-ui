@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b066e47d-ca71-4346-b558-f2f047bd0526" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/button/button.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/header/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/sidebar/index.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/sidebar/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/pageFrame/index.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/pageFrame/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.umirc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/.umirc.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/__tests__/index.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/__tests__/index.test.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sidebar/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sidebar/index.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sidebar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sidebar/index.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,6 +18,7 @@
   <component name="ProjectId" id="1TrS9chotal4W760Tu8Nc7cbbnt" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/header" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -76,7 +67,9 @@
       <workItem from="1574216572374" duration="1565000" />
       <workItem from="1574319483595" duration="866000" />
       <workItem from="1574320849946" duration="138000" />
-      <workItem from="1574321000634" duration="6439000" />
+      <workItem from="1574321000634" duration="6572000" />
+      <workItem from="1574329130828" duration="3046000" />
+      <workItem from="1574650326628" duration="11090000" />
     </task>
     <servers />
   </component>

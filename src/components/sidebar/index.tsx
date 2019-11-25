@@ -1,67 +1,96 @@
-import React, {useState} from "react";
-import { Menu, Icon } from "antd";
-import style from "./index.less";
+import React, {useState} from "react"
+import {Menu, Icon} from "antd"
+import style from "./index.less"
 
-const { SubMenu } = Menu;
+const {SubMenu} = Menu
+
 
 const Index = () => {
   const [openKeys, setOpenKeys] = useState(['sub1']);
 
+  const [currentPage, setCurrentPage] = useState(['home']);
+
+  const sidebarObj: { [key: string]: any } = {
+    'welcome-home': ['home'],
+
+    'user-bill-query': ['repayment'],
+    'repay-plan-query': ['repayment'],
+    'repay-transaction': ['repayment'],
+    'repay-rec': ['repayment'],
+
+    'user-loan': ['finance'],
+    'loan-fail': ['finance'],
+    'disburse-rec': ['finance'],
+
+    'repay-channel': ['channel'],
+
+    'disburse-reconciliation': ['settlement'],
+    'repay-reconciliation': ['settlement'],
+
+    'ar-home': ['ar-home'],
+    'customer-detail': ['ar-home'],
+
+    'reward-query': ['reward'],
+    'reward-reconciliation': ['reward'],
+  };
+
+  const clickHandler = () => {
+    console.log("it worked");
+  }
+
+  const keyFilterHandler = (str: string) => {
+    return sidebarObj[str] || {}
+  }
+
   return (
     <div className={style['sidebar']}>
       <Menu
-          theme={'dark'}
-          // onClick={}
-          style={{ width: 256 }}
-          defaultOpenKeys={['sub1']}
-          // selectedKeys={[this.state.current]}
-          mode="inline"
+        onClick={clickHandler}
+        defaultOpenKeys={['home']}
+        defaultSelectedKeys={['home']}
+        className={style['menu']}
+        mode="inline"
+      >
+        <SubMenu
+          key="home"
+          title={
+            <span>
+                <Icon type="home"/>
+                <span>Welcome Home</span>
+              </span>
+          }
         >
-          <SubMenu
-            key="sub1"
-            title={
-              <span>
-                <Icon type="mail" />
-                <span>Navigation One</span>
+          <Menu.Item key="welcome-home">Home Introduce</Menu.Item>
+        </SubMenu>
+        <SubMenu
+          key="repayment"
+          title={
+            <span>
+                <Icon type="wallet"/>
+                <span>Repayment Management</span>
               </span>
-            }
-          >
-            <Menu.Item key="1">Option 1</Menu.Item>
-            <Menu.Item key="2">Option 2</Menu.Item>
-            <Menu.Item key="3">Option 3</Menu.Item>
-            <Menu.Item key="4">Option 4</Menu.Item>
-          </SubMenu>
-          <SubMenu
-            key="sub2"
-            title={
-              <span>
-                <Icon type="appstore" />
-                <span>Navigation Two</span>
-              </span>
-            }
-          >
-            <Menu.Item key="5">Option 5</Menu.Item>
-            <Menu.Item key="6">Option 6</Menu.Item>
-            <Menu.Item key="7">Option 7</Menu.Item>
-            <Menu.Item key="8">Option 8</Menu.Item>
-          </SubMenu>
-          <SubMenu
-            key="sub3"
-            title={
-              <span>
-                <Icon type="setting" />
+          }
+        >
+          <Menu.Item key="user-bill-query">User Bill Query</Menu.Item>
+          <Menu.Item key="repay-plan-query">Repay Plan Query</Menu.Item>
+        </SubMenu>
+        <SubMenu
+          key="sub3"
+          title={
+            <span>
+                <Icon type="setting"/>
                 <span>Navigation Three</span>
               </span>
-            }
-          >
-            <Menu.Item key="9">Option 9</Menu.Item>
-            <Menu.Item key="10">Option 10</Menu.Item>
-            <Menu.Item key="11">Option 11</Menu.Item>
-            <Menu.Item key="12">Option 12</Menu.Item>
-          </SubMenu>
-        </Menu>
+          }
+        >
+          <Menu.Item key="9">Option 9</Menu.Item>
+          <Menu.Item key="10">Option 10</Menu.Item>
+          <Menu.Item key="11">Option 11</Menu.Item>
+          <Menu.Item key="12">Option 12</Menu.Item>
+        </SubMenu>
+      </Menu>
     </div>
   )
-};
+}
 
-export default Index;
+export default Index
